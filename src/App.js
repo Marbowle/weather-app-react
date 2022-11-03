@@ -10,6 +10,8 @@ function App() {
       <footer className="App-forecast">
         <Forecast />
       </footer>
+      <p><a href="https://github.com/Marbowle/weather-app-react">Open-source code</a> by Marta Domagała</p>
+      
     </div>
   );
 }
