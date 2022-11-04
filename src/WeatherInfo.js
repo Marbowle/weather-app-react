@@ -1,5 +1,5 @@
 import React from "react";
-
+import FormattedDate from "./FormattedDate";
 export default function WeatherInfo(props) {
   return (
     <div>
@@ -20,7 +20,9 @@ export default function WeatherInfo(props) {
           alt="Sunny"
         />
         <h2>{Math.round(props.data.temperature)}℃</h2>
-        <h4>Monday: 27th 2022</h4>
+        <h4>
+          <FormattedDate date={props.data.date} />
+        </h4>
       </div>
     </div>
   );
