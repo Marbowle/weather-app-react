@@ -2,7 +2,7 @@ import React from "react";
 import "./Forecast.css";
 export default function Forecast() {
   return (
-    <div className="container">
+    <div className="Forecast">
       <div className="row">
         <div className="col-3">
           <p>Today {""}</p>
