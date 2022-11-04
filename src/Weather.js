@@ -16,23 +16,32 @@ export default function Weather(props) {
       icon: response.data.condition.icon,
       wind: response.data.wind.speed,
       city: response.data.city,
+      pressure: response.data.temperature.pressure,
     });
+  }
+  function handleSubmit(event) {
+    event.preventDefault();
+    search();
+  }
+  function handleCityChange(event) {
+    setCity(event.target.value);
   }
   function search() {
     const apiKey = "0cbebt1e74ac98c43ofa9f9f906093eb";
-    let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key={apiKey}`;
+    let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleResponse);
   }
   if (weatherData.ready) {
     return (
       <div className="Weather">
-        <form>
+        <form onSubmit={handleSubmit}>
           <div className="row">
             <div className="col-7">
               <input
                 type="search"
                 placeholder="Type a city"
                 className="form-control"
+                onChange={handleCityChange}
               />
             </div>
             <div className="col-2">
