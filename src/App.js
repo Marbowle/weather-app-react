@@ -16,6 +16,7 @@ function App() {
             <a
               href="https://github.com/Marbowle/weather-app-react"
               target="_blank"
+              rel="noreferrer"
             >
               Open-source code
             </a>{" "}
