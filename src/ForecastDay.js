@@ -10,7 +10,7 @@ export default function ForecastDay(props) {
     return `${temperature} ℃`;
   }
   function dayName() {
-    let date = new Date();
+    let date = new Date(props.data.time * 1000);
     let day = date.getDay();
     let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
     return days[day];
