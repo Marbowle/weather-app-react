@@ -1,3 +1,9 @@
 .Forecast {
   border: 1px solid black;
+  text-align: center;
+  font-size: 18px;
+}
+
+.forecastTemperatureMin {
+  margin-left: 5px;
 }
