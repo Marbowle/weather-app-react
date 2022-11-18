@@ -10,7 +10,7 @@ export default function WeatherInfo(props) {
           <ul>
             <li>Humidity : {props.data.humidity} %</li>
             <li>Air Pressure : {props.data.pressure} hPa</li>
-            <li>Wind Speed: {Math.round(props.data.wind)} km/h</li>
+            <li>Wind Speed: {Math.round(props.data.wind * 3.6)} km/h</li>
           </ul>
         </div>
       </div>
@@ -19,7 +19,7 @@ export default function WeatherInfo(props) {
         <div>
           <WeatherIcon code={props.data.icon} size={70} />
         </div>
-        <div>{props.data.descriptions}</div>
+        <div>{props.data.description}</div>
         <h2>{Math.round(props.data.temperature)}℃</h2>
         <h4>
           <FormattedDate date={props.data.date} />

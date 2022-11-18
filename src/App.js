@@ -4,9 +4,7 @@ import Weather from "./Weather";
 function App() {
   return (
     <div className="App">
-      <div className="container">
         <Weather defaultCity="Stockholm" />
-
         <footer>
           {" "}
           <p>
@@ -20,7 +18,6 @@ function App() {
             by Marta Domagała
           </p>
         </footer>
-      </div>
     </div>
   );
 }
