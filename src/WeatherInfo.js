@@ -21,8 +21,8 @@ export default function WeatherInfo(props) {
           <WeatherIcon code={props.data.icon} size={90} />
         </div>
         <div className="weather-information">
-          <div className="text-uppercase">{props.data.description}</div>
-          <h2>{Math.round(props.data.temperature)}℃</h2>
+          <div className="description">{props.data.description}</div>
+          <h2 className="temp">{Math.round(props.data.temperature)}℃</h2>
           <h4>
             <FormattedDate date={props.data.date} />
           </h4>

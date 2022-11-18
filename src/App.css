@@ -7,3 +7,9 @@
   );
   padding: 25px;
 }
+footer {
+  margin-top: 15px;
+}
+footer a {
+  color: floralwhite;
+}

@@ -3,23 +3,38 @@ import "./App.css";
 import Weather from "./Weather";
 function App() {
   return (
-
-      <div className="App">
-        <Weather defaultCity="Stockholm" />
-        <footer>
-          {" "}
-          <p>
-            <a
-              href="https://github.com/Marbowle/weather-app-react"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Open-source code
-            </a>{" "}
-            by Marta Domagała
-          </p>
-        </footer>
-      </div>
+    <div className="App">
+      <Weather defaultCity="Stockholm" />
+      <footer>
+        {" "}
+        <p>
+          This project was coded by{" "}
+          <a
+            href="https://snazzy-youtiao-91f935.netlify.app/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Marta Domagała
+          </a>{" "}
+          and it is{" "}
+          <a
+            href="https://github.com/Marbowle/weather-app-react"
+            target="_blank"
+            rel="noreferrer"
+          >
+            open-source code
+          </a>{" "}
+          and{" "}
+          <a
+            href="https://preeminent-bombolone-003528.netlify.app/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            hosted on Netlify
+          </a>
+        </p>
+      </footer>
+    </div>
   );
 }
 
