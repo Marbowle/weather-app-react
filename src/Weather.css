@@ -1,3 +1,23 @@
-.Weather {
-  border: 1px solid green;
+.searching {
+  width: 100%;
+  margin: 0 0 75px;
+}
+.searching .form-control {
+  display: block;
+  width: 150%;
+  padding: 15px;
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.835);
+  border-radius: 0px 16px;
+  margin-top: -25px;
+  box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
+  color: #313131;
+  font-size: 20px;
+  transition: all 150ms ease-in-out;
+}
+.searching .form-control:focus {
+  background-color: rgba(255, 255, 255, 0.9);
 }

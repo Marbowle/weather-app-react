@@ -8,9 +8,12 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .App {
-  background-image: url(./images/night.jpg);
+  background-image: url(./images/day.jpg);
   background-size: cover;
   background-position: bottom;
-  transition: all 150ms easy-in-out;
+  transition: all 150ms ease-in-out;
   color: white;
+}
+.App day {
+  background-image: url(./images/night.jpg);
 }

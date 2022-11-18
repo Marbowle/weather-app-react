@@ -3,7 +3,8 @@ import "./App.css";
 import Weather from "./Weather";
 function App() {
   return (
-    <div className="App">
+
+      <div className="App">
         <Weather defaultCity="Stockholm" />
         <footer>
           {" "}
@@ -18,7 +19,7 @@ function App() {
             by Marta Domagała
           </p>
         </footer>
-    </div>
+      </div>
   );
 }
 
