@@ -1,6 +1,7 @@
 import React from "react";
 import FormattedDate from "./FormattedDate";
 import WeatherIcon from "./WeatherIcon";
+import "./WeatherInfo.css";
 export default function WeatherInfo(props) {
   return (
     <div>
@@ -15,15 +16,17 @@ export default function WeatherInfo(props) {
         </div>
       </div>
 
-      <div>
+      <div className="weather-description">
         <div>
-          <WeatherIcon code={props.data.icon} size={70} />
+          <WeatherIcon code={props.data.icon} size={90} />
         </div>
-        <div>{props.data.description}</div>
-        <h2>{Math.round(props.data.temperature)}℃</h2>
-        <h4>
-          <FormattedDate date={props.data.date} />
-        </h4>
+        <div className="weather-information">
+          <div className="text-uppercase">{props.data.description}</div>
+          <h2>{Math.round(props.data.temperature)}℃</h2>
+          <h4>
+            <FormattedDate date={props.data.date} />
+          </h4>
+        </div>
       </div>
     </div>
   );
