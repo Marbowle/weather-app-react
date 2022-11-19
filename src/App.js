@@ -10,7 +10,7 @@ function App() {
         <p>
           This project was coded by{" "}
           <a
-            href="https://snazzy-youtiao-91f935.netlify.app/"
+            href="https://martadomagala.netlify.app/"
             target="_blank"
             rel="noreferrer"
           >
@@ -26,7 +26,7 @@ function App() {
           </a>{" "}
           and{" "}
           <a
-            href="https://preeminent-bombolone-003528.netlify.app/"
+            href="https://web-weather-react-app.netlify.app/"
             target="_blank"
             rel="noreferrer"
           >
